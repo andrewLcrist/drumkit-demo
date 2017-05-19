@@ -12,3 +12,9 @@ window.addEventListener('keyup', function(e) {
   if(!key) return
   key.classList.remove('playing')
 })
+
+var play = (key) => {
+  let audio = document.querySelector(`audio[data-key="${key}"]`)
+  audio.currentTime = 0
+  audio.play()
+}

@@ -1,24 +1,39 @@
 body {
+  background-image: url('./images/matthew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
   display: flex;
-  height: 100vh;
+  justify-content: center;
   width: 100vw;
+  height: 100vh;
+}
+
+.key-container {
+  width: 80vw;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
-  background-image: url('./images/matthew.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
 }
 
 .key {
-  border: 3px blue solid;
-  height: 50px;
-  width: 50px;
+  border: 3px black solid;
+  height: 75px;
+  width: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .07s
+  transition: all .07s;
+  flex-direction: column;
+}
+
+kbd {
+  font-size: 24px;
+  color: white;
+}
+
+span {
+  color: orange;
 }
 
 .key:hover {
